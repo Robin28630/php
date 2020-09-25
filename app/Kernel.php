@@ -1,8 +1,14 @@
 <?php
-static function router(){
+namespace app;
+
+class Kernel {
+
+
+static public function router(){
 		$controllerParam="home";
 		$actionParam="default";
 		$idParam=0;
+    $url;
 		if ( isset( $_GET['controller'] ) )
 		{
 			$controllerParam=strtolower($_GET['controller']);
@@ -27,3 +33,4 @@ static function router(){
 
 		}
 	}
+}
