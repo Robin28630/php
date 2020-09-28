@@ -8,5 +8,5 @@ catch (Exception $e) {
 	echo $e->getMessage();
 }
 $content=ob_get_clean();
-require('../MVC/app/view/base.php')
+require('/view/base.php')
 ?>

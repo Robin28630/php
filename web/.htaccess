@@ -1,7 +1,7 @@
-#mise en place de rï¿½ecriture
+#mise en place de réecriture
 Options +FollowSymLinks
 RewriteEngine On
-#adresse de base de rï¿½criture
+#adresse de base de récriture
 RewriteBase /
 #Regles
 RewriteCond %{REQUEST_FILENAME} -d [OR]
