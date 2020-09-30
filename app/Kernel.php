@@ -39,23 +39,27 @@ static public function router(){
 				if ( isset( $_GET['id'] ) ) $idParam=intval($_GET['id']);
 			}
 		}
-		self::$url=$controllerParam."/".$actionParam;
+		$url=$controllerParam."/".$actionParam;
 		spl_autoload_register(__CLASS__."::autoload");
 		ob_start();
-	switch ( self::$url ) {
+
+	switch ( $url ) {
 
 			case "home/default":
 				$controllerCall = new Controllers\Home();
 				$controllerCall->defaultAction();
 				break;
 
-      case "home/SignIn":
+      case "signin/default":
       $controllerCall = new Controllers\SignIN();
       $controllerCall->FormUser();
 
-			case "SignIn/Send":
+			break;
+
+			case "signin/send":
       $controllerCall = new Controllers\SignIN();
       $controllerCall->AuthUser();
+			break;
 		}
 	}
 	static function viewer($view,$variables=array()){

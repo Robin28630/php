@@ -5,11 +5,11 @@ class  SignIN {
 
   static public function FormUser () {
   \app\Kernel::viewer("form.php");
-
+  echo "bonjour test";
 	}
 
   static public function AuthUser () {
-  \Models\user::AuthBdd();
+  app\Models\user::AuthBdd();
 
 	}
 

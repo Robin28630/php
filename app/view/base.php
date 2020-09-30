@@ -33,7 +33,7 @@
             <a class="nav-link dropdown-toggle" href="/game" id="dropdownGame" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parties</a>
             <div class="dropdown-menu" aria-labelledby="dropdownGame">
               <a class="dropdown-item" href="/game/list">En cours</a>
-              <a class="dropdown-item" href="home/SignIN">connexion</a>
+              <a class="dropdown-item" href="/SignIN/default">connexion</a>
             </div>
           </li>
         </ul>

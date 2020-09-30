@@ -1,11 +1,9 @@
-<body>
-     <main class="main">
-     <div class="fond" style="bottom: 0%;top:0%;background-color:#6c98dd;filter: blur(100PX);" >
-     </div>
+
+
    <Section class="background" style="bottom: 20%;background-color:white;">
    <div class="container-fluid mt-3">
       <h4 class="mb-2"style="margin-left: 40%;font-family: 'Spicy Rice', cursive;">Formulaires d'inscription</h4><br/><br/>
-      <form action ="SignIN/Send" method="post">
+      <form action ="/signin/send" method="post">
          <div class="form-row">
             <div class="form-group col-sm-6">
                <label for="myEmail" style="font-family: 'Spicy Rice', cursive;">Identifiant</label>
@@ -34,10 +32,11 @@
       <input type="text" class="form-control" id="myCity" name="ville">
             </div>
             <div class="form-group col-sm-4">
-               <label for="myState" style="font-family: 'Spicy Rice', cursive;">Pays</label>
+               <label for="myState" style="font-family: 'Spicy Rice', cursive;">Domaine</label>
                <select id="myState" class="form-control" name="pays">
                   <option selected>Choose...</option>
-                  <option>France</option>
+                  <option>Ressources</option>
+                  <option>Comptes</option>
                </select>
             </div>
 
@@ -47,10 +46,3 @@
       </form>
    </div>
 </Section>
-
-</main>
-
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-</body>
