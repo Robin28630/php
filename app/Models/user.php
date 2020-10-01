@@ -5,24 +5,54 @@ class  user {
  public $user;
  public $password;
  public $domain;
- public $new_user_name = $_POST['user'];
- public $new_user_pass = $_POST['mdp'];
+
+
+  public function __construct() {
+
+	   $new_user_name=$_POST['user'];
+     $new_user_pass=$_POST['mdp'];
+     $new_user_domain=$_POST['domain'];
+	   $this->setNom($new_user_name);
+	   $this->setPass($new_user_pass);
+	   $this->setDomain($new_user_domain);
+
+  }
 
   public function getNom(){
+
+  	$new_user_pass = $_POST['user'];
     return $this->new_user_name ;
+
   }
 
   public function setNom($new_user_name){
-    $this->user = $new_user_name;
+
+	   $this->user = $new_user_name;
+
   }
-  public function setPasse($new_user_pass){
-    $this->password = $new_user_pass;
+
+  public function setPass($new_user_pass){
+
+    $this->password= $new_user_pass;
+
+  }
+   public function setDomain($new_user_domain){
+
+    $this->domain= $new_user_domain;
+
   }
 
   static public function AuthBdd() {
-    $userad = new user;
-    $userad->setNom($new_user_name);
-    $host = 'myldap';
+
+	  $userad = new user();
+    var_dump($userad);
+      \app\Kernel::viewer("auth.php");
+  #  }
+
+
+  }
+}
+    /*$host = 'myldap';
     $basedn = 'dc=mydomain,dc=ex';
     $group = 'SomeGroup';
     $ad = ldap_connect("ldap://{$host}.{$domain}") or die('Could not connect to LDAP server.');
@@ -53,8 +83,8 @@ class  user {
   /*
   * This function retrieves and returns CN from given DN
   */
-  function getCN($dn) {
-      preg_match('/[^,]*/', $dn, $matchs, PREG_OFFSET_CAPTURE, 3);
+  /*function getCN($dn) {
+      preg_match('/[^,]*//*', $dn, $matchs, PREG_OFFSET_CAPTURE, 3);
       return $matchs[0][0];
   }
 
@@ -62,7 +92,7 @@ class  user {
   * This function checks group membership of the user, searching only
   * in specified group (not recursively).
   */
-  function checkGroup($ad, $userdn, $groupdn) {
+  /*function checkGroup($ad, $userdn, $groupdn) {
       $attributes = array('members');
       $result = ldap_read($ad, $userdn, "(memberof={$groupdn})", $attributes);
       if ($result === FALSE) { return FALSE; };
@@ -74,7 +104,7 @@ class  user {
   * This function checks group membership of the user, searching
   * in specified group and groups which is its members (recursively).
   */
-  function checkGroupEx($ad, $userdn, $groupdn) {
+/*  function checkGroupEx($ad, $userdn, $groupdn) {
       $attributes = array('memberof');
       $result = ldap_read($ad, $userdn, '(objectclass=*)', $attributes);
       if ($result === FALSE) { return FALSE; };
@@ -87,4 +117,5 @@ class  user {
           };
       };
       return FALSE;
-  }
+  }*/
+  #}

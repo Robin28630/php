@@ -1,5 +1,5 @@
 <?php
-namespace App\Controllers;
+namespace app\Controllers;
 
 class  SignIN {
 
@@ -9,7 +9,7 @@ class  SignIN {
 	}
 
   static public function AuthUser () {
-  app\Models\user::AuthBdd();
+  \app\Models\user::AuthBdd();
 
 	}
 

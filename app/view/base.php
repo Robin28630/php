@@ -10,8 +10,8 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../web/css/bootstrap.min.css" type="text\css" rel="stylesheet">
-
+    <!--<link href="../web/css/bootstrap.min.css" type="text\css" rel="stylesheet">-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="../web/css/custom.css" type="text\css" rel="stylesheet">
   </head>
