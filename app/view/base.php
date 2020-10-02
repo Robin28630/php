@@ -13,16 +13,19 @@
     <!--<link href="../web/css/bootstrap.min.css" type="text\css" rel="stylesheet">-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Custom styles for this template -->
-    <link href="../web/css/custom.css" type="text\css" rel="stylesheet">
+    <link href="../../web/css/custom.css" type="text\css" rel="stylesheet">
   </head>
 
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#"><img src="/img/brand.jpg"></a>
+      <a class="navbar-brand margin" href="#"><img src="../../web/img/protech-removebg-preview.png" style="width:30%;margin-right:0px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+
       </button>
+
+<h2 class="row-md-2" style="color: white"> Protech Cloud </h2>
 
       <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav mr-auto">
